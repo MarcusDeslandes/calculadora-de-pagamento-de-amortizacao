@@ -10,6 +10,7 @@
     color: var(--cor-ardosia-900);
     font-size: 20px;
     font-weight: 700;
+    padding: 8px 0;
 }
 
 .container-empty-limpar {
@@ -19,16 +20,12 @@
     text-decoration: underline;
     text-underline-offset: 4px;
     padding: 4px 0;
+    cursor: pointer;
 }
 
-/* .container-empty-input {
-   display: flex;
-   flex-direction: column;
-} */
-
-.container-empty-input label {
+.container-empty-input label, .container-empty-input-tipo-amortizacao legend {
     color: var(--cor-ardosia-700);
-    padding: 8px 0;
+    padding: 12px 0;
     text-align: start;
     font-size: 14px;
     font-weight: 300;
@@ -36,7 +33,7 @@
 
 .container-empty-input input {
     padding: 12px;
-    border: 0.5px solid var(--cor-ardosia-700);
+    border: 0.5px solid var(--cor-ardosia-300);
     border-radius: 4px;
     width: 330px;
 }
@@ -47,3 +44,65 @@
     padding: 4px 0;
 }
 
+.container-empty-input-tipo-amortizacao {
+    text-align: start;
+}
+
+.container-empty-input-tipo-amortizacao div {
+    display: flex;
+    gap: 15px;
+    border: 0.5px solid var(--cor-ardosia-300);
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.container-empty-input-tipo-amortizacao input {
+    width: 5%
+}
+
+.container-empty-input-tipo-amortizacao label {
+    font-weight: 600;
+    color: var(--cor-ardosia-900);
+    font-size: 18px;
+}
+
+.botao-calcular {
+    padding: 20px;
+}
+
+.botao-calcular button {
+    padding: 16px;
+    width: 100%;
+    border: none;
+    background-color: var(--cor-amarelo);
+    border-radius: 30px;
+    font-size: 20px;
+    font-family: var(--fonte-principal);
+    color: var(--cor-ardosia-900);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.botao-calcular button i {
+    margin-right: 10px;
+}
+
+.container-empty-resultados {
+    padding: 24px;
+    background-color: var(--cor-ardosia-900);
+}
+
+.container-empty-resultados img {
+    width: 60%;
+}
+
+.container-empty-resultados h2 {
+    color: var(--cor-branco);
+    font-weight: 600;
+    padding: 8px;
+}
+
+.container-empty-resultados p {
+    color: var(--cor-ardosia-300);
+    padding: 8px;
+}
