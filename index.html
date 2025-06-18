@@ -6,6 +6,11 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="./styles/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
   <script src="https://kit.fontawesome.com/a86f4eb0a3.js" crossorigin="anonymous"></script>
   
   <title>Frontend Mentor | Calculadora de amortização</title>
@@ -19,28 +24,28 @@
     <div class="container-empty-input">
       <div class="container-empty-input-valor">
         <label for="valor-casa">Valor do Imóvel</label>
-        <input type="number" name="valor-casa">
+        <input type="number" name="valor-casa" required>
       </div>
 
       <div class="container-empty-input-anos">
         <label for="anos-parcela">Nº de Parcelas</label>
-        <input type="number" name="anos-parcela">
+        <input type="number" name="anos-parcela" required>
       </div>
 
       <div class="container-empty-input-juros">
         <label for="taxa-juros">Taxa de Juros</label>
-        <input type="number" name="taxa-juros">
+        <input type="number" name="taxa-juros" required>
       </div>
 
       <div class="container-empty-input-tipo-amortizacao">
         <legend>Tipo de amortização</legend>
         <div>
-          <input type="radio" name="tipo-amortizacao-opcao" value="PRICE">
+          <input type="radio" name="tipo-amortizacao-opcao" value="PRICE" required>
           <label for="tipo-amortizacao-opcao">Price</label>
         </div>
 
         <div>
-          <input type="radio" name="tipo-amortizacao-opcao" value="SAC">
+          <input type="radio" name="tipo-amortizacao-opcao" value="SAC" required>
           <label for="tipo-amortizacao-opcao">SAC</label>
         </div>
         
@@ -57,7 +62,20 @@
       <img src="/assets/images/illustration-empty.svg" alt="Imagem ilustrativa de finanças">
       <h2>Veja aqui o resultado</h2>
       <p>Preencha o formulário e clique em "Calcular" para ver quais seriam seus pagamentos mensais.</p>
-    </section>
+  </section>
 
+  <section class="container-filled-resultados">
+    <h2>Seus resultados</h2>
+    <p>Seus resultados são mostrados abaixo com base nas informações fornecidas. Para ajustar os resultados, edite o formulário e clique em "calcular" novamente.</p>
+
+    <div class="container-filled-resultados-box">
+      <h3>Seus pagamentos mensais</h3>
+      <p class="total-mensal">R$ 1,000.00</p>
+      <h3>Total que você pagará ao longo do prazo</h3>
+      <p class="total-final">R$ 539,322.44</p>
+    </div>
+  </section>
+
+    <script src="script.js"></script>
 </body>
 </html>

@@ -28,7 +28,7 @@
     padding: 12px 0;
     text-align: start;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 600;
 }
 
 .container-empty-input input {
@@ -36,6 +36,11 @@
     border: 0.5px solid var(--cor-ardosia-300);
     border-radius: 4px;
     width: 330px;
+}
+
+.container-empty-input input::-webkit-inner-spin-button, ::-webkit-outer-spin-button {
+    appearance: none;
+    display: none;
 }
 
 .container-empty-input-valor, .container-empty-input-anos, .container-empty-input-juros{
@@ -103,6 +108,7 @@
 }
 
 .container-empty-resultados p {
-    color: var(--cor-ardosia-300);
+    color: var(--cor-ardosia-500);
     padding: 8px;
+    line-height: 22px;
 }

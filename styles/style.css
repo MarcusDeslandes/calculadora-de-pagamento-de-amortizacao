@@ -1,12 +1,11 @@
 @import url(./formulario-vazio.css);
+@import url(./formulario-preenchido.css);
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
 :root {
     /* cores primárias */
@@ -22,6 +21,7 @@
     --cor-ardosia-500: hsl(200, 26%, 54%);
     --cor-ardosia-700: hsl(200, 24%, 40%);
     --cor-ardosia-900: hsl(202, 55%, 16%);
+    --cor-ardosia-1000: hsl(201, 65%, 12%);
 
     /* fonte */
     --fonte-principal: 'Plus Jakarta Sans', sans-serif;
