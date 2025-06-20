@@ -8,11 +8,13 @@ function calcularMensalidade () {
     const taxaJuros = document.querySelector('#taxa-juros');
     const jurosConvertido = taxaJuros.value / 100;
 
-    const valorParcela = valorCasa.value * (1 + jurosConvertido) ** mesesParcela * jurosConvertido / (1 + jurosConvertido) ** mesesParcela - 1;
+    // const valorParcela = valorCasa.value * (1 + jurosConvertido) ** mesesParcela * jurosConvertido / (1 + jurosConvertido) ** mesesParcela - 1;
+
+    const valorParcela = (valorCasa.value * jurosConvertido) / (1 - (1 + jurosConvertido)** - mesesParcela);
 
     console.log(mesesParcela);
     console.log(jurosConvertido);
     
-    console.log(valorParcela);
+    console.log(valorParcela.toFixed(2));
     
 }
