@@ -1,20 +1,26 @@
+const opcaoAmortizacao = document.querySelectorAll('input[type=radio][name="tipo-amortizacao-opcao"]');
+let valorSelecionado = "";
+
+opcaoAmortizacao.forEach(radio => {
+    radio.addEventListener('change', () => {
+        if (radio.checked) {
+            valorSelecionado = radio.value;
+            console.log(valorSelecionado);           
+        }
+    })
+});
+
 // Função calculo
-function calcularMensalidade () {
-    const valorCasa = document.querySelector("#valor-casa");
+function mensalidadePrice() {
+  const valorCasa = document.querySelector("#valor-casa");
 
-    const anosParcela = document.querySelector("#anos-parcela");
-    const mesesParcela = anosParcela.value * 12;
+  const anosParcela = document.querySelector("#anos-parcela");
+  const mesesParcela = anosParcela.value * 12;
 
-    const taxaJuros = document.querySelector('#taxa-juros');
-    const jurosConvertido = taxaJuros.value / 100;
+  const taxaJuros = document.querySelector("#taxa-juros");
+  const jurosConvertido = taxaJuros.value / 100;
 
-    // const valorParcela = valorCasa.value * (1 + jurosConvertido) ** mesesParcela * jurosConvertido / (1 + jurosConvertido) ** mesesParcela - 1;
+  const valorParcela = (valorCasa.value * jurosConvertido) / (1 - (1 + jurosConvertido) ** -mesesParcela);
 
-    const valorParcela = (valorCasa.value * jurosConvertido) / (1 - (1 + jurosConvertido)** - mesesParcela);
-
-    console.log(mesesParcela);
-    console.log(jurosConvertido);
-    
-    console.log(valorParcela.toFixed(2));
-    
+  console.log(valorParcela.toFixed(2));
 }
