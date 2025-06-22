@@ -1,3 +1,4 @@
+// Função selecionar tipo de amortização
 const opcaoAmortizacao = document.querySelectorAll('input[type=radio][name="tipo-amortizacao-opcao"]');
 let valorSelecionado = "";
 
@@ -10,7 +11,7 @@ opcaoAmortizacao.forEach(radio => {
     })
 });
 
-// Função calculo
+// Função calculo PRICE
 function mensalidadePrice() {
   const valorCasa = document.querySelector("#valor-casa");
 
