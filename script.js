@@ -23,5 +23,12 @@ function mensalidadePrice() {
 
   const valorParcela = (valorCasa.value * jurosConvertido) / (1 - (1 + jurosConvertido) ** -mesesParcela);
 
-  console.log(valorParcela.toFixed(2));
+  const valorTotal = valorParcela * mesesParcela;
+
+  const totalMensal = document.querySelector('#total-mensal');
+
+  const totalValor = document.querySelector('#total-final');
+
+  totalMensal.innerHTML = `R$ ${valorParcela.toFixed(2)}`;
+
 }
