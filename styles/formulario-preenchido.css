@@ -6,7 +6,7 @@
 }
 
 .container-filled-resultados {
-    display: block;
+    display: none;
     background-color: var(--cor-ardosia-900);
     padding: 20px;
 }

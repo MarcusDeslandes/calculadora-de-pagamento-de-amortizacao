@@ -31,4 +31,17 @@ function mensalidadePrice() {
 
   totalMensal.innerHTML = `R$ ${valorParcela.toFixed(2)}`;
 
+  totalValor.innerHTML = `R$ ${valorTotal.toFixed(2)}`
+
+  const resultadoVazio = document.querySelector("#container-empty-resultados");
+  const resultadoPreenchido = document.querySelector("#container-filled-resultados");
+
+  resultadoVazio.style.display = 'none';
+  resultadoPreenchido.style.display = 'block';
 }
+
+function limparFormulario () {
+    const formulario = document.querySelector('#container-empty-input');
+    formulario.reset();
+}
+

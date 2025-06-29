@@ -19,9 +19,9 @@
   <section class="container-empty">
     <h1>Calculadora de Amortização</h1>
 
-    <button class="container-empty-limpar">Limpar tudo</button>
+    <button class="container-empty-limpar" id="container-empty-limpar" onclick="limparFormulario()">Limpar tudo</button>
 
-    <div class="container-empty-input">
+    <form class="container-empty-input" id="container-empty-input">
       <div class="container-empty-input-valor">
         <label for="valor-casa">Valor do Imóvel</label>
         <input type="number" name="valor-casa" id="valor-casa" required>
@@ -54,17 +54,17 @@
       <div class="botao-calcular">
         <button id="botão-calculo" onclick="mensalidadePrice()"><i class="fa-solid fa-calculator"></i>Calcular</button>
       </div>
-    </div>
+    </form>
 
   </section>
 
-  <section class="container-empty-resultados">
+  <section class="container-empty-resultados" id="container-empty-resultados">
       <img src="/assets/images/illustration-empty.svg" alt="Imagem ilustrativa de finanças">
       <h2>Veja aqui o resultado</h2>
       <p>Preencha o formulário e clique em "Calcular" para ver quais seriam seus pagamentos mensais.</p>
   </section>
 
-  <section class="container-filled-resultados">
+  <section class="container-filled-resultados" id="container-filled-resultados">
     <h2>Seus resultados</h2>
     <p>Seus resultados são mostrados abaixo com base nas informações fornecidas. Para ajustar os resultados, edite o formulário e clique em "calcular" novamente.</p>
 
@@ -72,7 +72,7 @@
       <h3>Seus pagamentos mensais</h3>
       <p class="total-mensal" id="total-mensal">R$ 1,000.00</p>
       <h3>Total que você pagará ao longo do prazo</h3>
-      <p class="total-final">R$ 539,322.44</p>
+      <p class="total-final" id="total-final">R$ 539,322.44</p>
     </div>
   </section>
 
